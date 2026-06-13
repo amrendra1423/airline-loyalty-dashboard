@@ -299,7 +299,7 @@ elif page == "🚨 Risk Watch List":
         return ""
 
     st.dataframe(
-        display.style.applymap(highlight_risk, subset=["Churn Prob"]),
+        display.style.map(highlight_risk, subset=["Churn Prob"]),
         use_container_width=True, hide_index=True, height=560,
     )
 
