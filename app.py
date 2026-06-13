@@ -20,20 +20,19 @@ st.set_page_config(
 # ── Custom CSS ────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-    .main { background-color: #0F172A; }
-    .stMetric { background-color: #1E293B; border-radius: 10px; padding: 12px; }
     div[data-testid="metric-container"] {
         background-color: #1E293B;
         border: 1px solid #334155;
         border-radius: 10px;
         padding: 14px 18px;
     }
-    .seg-pill {
-        display: inline-block; padding: 3px 10px;
-        border-radius: 20px; font-size: 12px; font-weight: 600;
+    div[data-testid="metric-container"] label {
+        color: #94A3B8 !important;
+        font-size: 12px !important;
     }
-    h1 { color: #F1F5F9 !important; }
-    h2 { color: #94A3B8 !important; font-size: 14px !important; text-transform: uppercase; letter-spacing: 1px; }
+    div[data-testid="metric-container"] div[data-testid="stMetricValue"] {
+        color: #F1F5F9 !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
